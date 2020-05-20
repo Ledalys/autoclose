@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "Autoclose",
+	"version": "1.0",
+	"description": "Close new tabs",
+	"icons": {
+		"48": "icons/close-disabled.png"
+	},
+	"background": {
+	    "scripts": ["autoclose.js"]
+  	},
+	"permissions": [
+		"tabs"
+	],
+	"browser_action": {
+		"default_icon": "icons/close-disabled.png"
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "autoclose@bnac.fr"
+		}
+	}
+}
